@@ -1,0 +1,21 @@
+Amazon EC2 (Elastic Compute Cloud): Virtual servers in the cloud and instance types.
+Amazon S3 (Simple Storage Service): Object storage for files and data.
+AWS Lambda: Serverless computing for running code without provisioning or managing servers.
+Amazon RDS (Relational Database Service): Managed relational databases like MySQL, PostgreSQL, etc.
+AWS CloudFormation: Infrastructure as Code (IaC) for provisioning and managing AWS resources.
+Amazon VPC (Virtual Private Cloud): Networking and security for AWS resources.
+AWS IAM (Identity and Access Management): User management and access control.
+AWS CLI (Command Line Interface): Command-line tool for interacting with AWS services.
+AWS CloudWatch: Monitoring and management of AWS resources and applications.
+Amazon ECS (Elastic Container Service): Container orchestration and management.
+AWS Elastic Beanstalk: Platform as a Service (PaaS) for deploying and managing applications.
+AWS CodeDeploy: Automated deployment of applications to EC2 instances or Lambda functions.
+AWS CodePipeline: Continuous Delivery service for building, testing, and deploying code.
+AWS CloudTrail: Auditing and tracking of API calls made within the AWS account.
+Amazon Route 53: Scalable and highly available Domain Name System (DNS) web service.
+AWS CloudFront: Content Delivery Network (CDN) for low-latency and high-speed content delivery.
+AWS SNS (Simple Notification Service): Pub/sub messaging service for sending notifications.
+AWS SQS (Simple Queue Service): Managed message queuing service for decoupling applications.
+AWS KMS (Key Management Service): Encryption and key management for data protection.
+AWS Security Best Practices: Security considerations, policies, and controls for AWS environments.
+These topics cover a broad range of AWS services and concepts that are essential for a DevOps Engineer working with AWS. It's important to gain practical experience by applying these concepts in real-world projects and stay updated with the latest AWS services and best practices.
