@@ -1,1 +1,41 @@
-bhai aaj bahut padhai karna h
+Certainly! Here's a sample Docker Compose YAML file that demonstrates a basic setup with two services:
+
+```yaml
+version: "3.9"
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./web-content:/usr/share/nginx/html
+
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=myapp
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:
+```
+
+Let's go through the file:
+
+- The `version` specifies the version of Docker Compose file syntax being used. In this case, it's version 3.9.
+
+- Under `services`, we define two services: `web` and `db`.
+
+  - The `web` service uses the `nginx:latest` image and maps port 80 on the host to port 80 in the container. It also mounts the `./web-content` directory from the host to the `/usr/share/nginx/html` directory in the container.
+
+  - The `db` service uses the `mysql:latest` image and sets up environment variables for configuring the MySQL database. It also mounts a volume named `db-data` to persist the database data in the container.
+
+- Finally, the `volumes` section defines a named volume called `db-data`. This volume is used by the `db` service to store its data.
+
+To use this Docker Compose file, save it as `docker-compose.yml` and run the `docker-compose up` command in the same directory. It will start the two services defined in the file, pulling the necessary images if they are not already present on your system.
+
+Feel free to modify this file according to your specific requirements.
